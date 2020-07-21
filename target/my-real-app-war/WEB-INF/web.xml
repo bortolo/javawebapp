@@ -6,6 +6,11 @@
   <display-name>Archetype Created Web Application</display-name>
 </web-app>
 
+<servlet>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <servlet-class>org.mycompany.servlets.HelloWorldServlet</servlet-class>
+    </servlet>
+
 <servlet-mapping>
     <servlet-name>HelloWorldServlet</servlet-name>
     <url-pattern>/HelloWorld</url-pattern>
