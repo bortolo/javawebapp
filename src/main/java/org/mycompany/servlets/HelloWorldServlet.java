@@ -15,7 +15,7 @@ import java.util.Date;
 /**
  * Servlet implementation class HelloWorldServlet
  */
-@WebServlet("/saytime")
+@WebServlet("/HelloWorld")
 public class HelloWorldServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     /**
