@@ -30,7 +30,7 @@ public class HelloWorldServlet extends HttpServlet {
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
-        out.print("Hellow world v3: " + new Date().toString());
+        out.print("Hellow world v4: " + new Date().toString());
     }
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
