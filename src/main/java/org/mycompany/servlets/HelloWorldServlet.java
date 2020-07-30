@@ -12,6 +12,8 @@ import java.util.Set;
 import java.util.Iterator;
 import java.util.Date;
 
+import org.mycompany.jcg.CreateTableInsertRows;
+
 /**
  * Servlet implementation class HelloWorldServlet
  */
@@ -30,7 +32,17 @@ public class HelloWorldServlet extends HttpServlet {
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
-        out.print("Hellow world v6: " + new Date().toString());
+        out.print("Hellow world v7: " + new Date().toString());
+System.out.println("Trying connection to PostgreSQL server.");
+
+        CreateTableInsertRows myObj = new CreateTableInsertRows();
+
+        try {
+        myObj.connect();
+            System.out.println("End of connection session");
+        } catch (ClassNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
     }
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
