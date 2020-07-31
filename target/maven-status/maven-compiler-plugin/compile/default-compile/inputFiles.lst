@@ -1,2 +1,5 @@
-/Users/andreabortolossi/Documents/Documents – Andrea’s MacBook Pro/Coding projects/Java-Experiments/JavaMavenApp/my-real-app-war/src/main/java/org/mycompany/jcg/CreateTableInsertRows.java
-/Users/andreabortolossi/Documents/Documents – Andrea’s MacBook Pro/Coding projects/Java-Experiments/JavaMavenApp/my-real-app-war/src/main/java/org/mycompany/servlets/HelloWorldServlet.java
+/Users/andreabortolossi/Documents/Documents – Andrea’s MacBook Pro/Coding projects/Java-Experiments/JavaMavenApp/my-real-app-war/src/main/java/org/mycompany/servlets/PopulateDb.java
+/Users/andreabortolossi/Documents/Documents – Andrea’s MacBook Pro/Coding projects/Java-Experiments/JavaMavenApp/my-real-app-war/src/main/java/org/mycompany/servlets/InsertActor.java
+/Users/andreabortolossi/Documents/Documents – Andrea’s MacBook Pro/Coding projects/Java-Experiments/JavaMavenApp/my-real-app-war/src/main/java/org/mycompany/models/Actor.java
+/Users/andreabortolossi/Documents/Documents – Andrea’s MacBook Pro/Coding projects/Java-Experiments/JavaMavenApp/my-real-app-war/src/main/java/org/mycompany/servlets/HelloWorld.java
+/Users/andreabortolossi/Documents/Documents – Andrea’s MacBook Pro/Coding projects/Java-Experiments/JavaMavenApp/my-real-app-war/src/main/java/org/mycompany/jcg/ManagePostgreSql.java

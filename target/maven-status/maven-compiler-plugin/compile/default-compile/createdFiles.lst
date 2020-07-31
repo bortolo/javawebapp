@@ -1,2 +1,5 @@
-org/mycompany/jcg/CreateTableInsertRows.class
-org/mycompany/servlets/HelloWorldServlet.class
+org/mycompany/models/Actor.class
+org/mycompany/servlets/HelloWorld.class
+org/mycompany/servlets/InsertActor.class
+org/mycompany/jcg/ManagePostgreSql.class
+org/mycompany/servlets/PopulateDb.class
