@@ -2,15 +2,34 @@ package org.mycompany.jcg;
 
 import java.sql.*;
 import java.util.Properties;
+import java.io.IOException;
 
 import org.mycompany.models.Actor;
+import org.mycompany.util.ManageConfigProperties;
 
 public class ManagePostgreSql{
 
-//    private final String url = "jdbc:postgresql://mybortolodbprova.postgres.database.azure.com/mypgsqldb";
-    private final String url = "jdbc:postgresql://mybortolodbprova.postgres.database.azure.com:5432/mypgsqldb";
-    private final String user = "psqladminun@mybortolodbprova";
-    private final String password = "H@Sh1CoR3!";
+    // private String url = "";
+    // private String user = "";
+    // private String password = "";
+    private String url = "jdbc:postgresql://localhost:5432/mypgsqldb";
+    private String user = "andreabortolossi";
+    private String password = "Password1234!";
+    // private final String url = "jdbc:postgresql://mybortolodbprova.postgres.database.azure.com:5432/mypgsqldb";
+    // private final String user = "psqladminun@mybortolodbprova";
+    // private final String password = "H@Sh1CoR3!";
+
+    public void setVariables() throws IOException {
+      ManageConfigProperties myObj = new ManageConfigProperties();
+      try{
+      this.url =  myObj.getConfigValues("config.properties","url");
+      this.user =  myObj.getConfigValues("config.properties","user");
+      this.password =  myObj.getConfigValues("config.properties","password");
+    } catch (Exception e) {
+			System.out.println("Exception: " + e);
+		}
+
+    }
 
     /**
      * Connect to the PostgreSQL database

@@ -33,6 +33,7 @@ public class PopulateDb extends HttpServlet {
         ManagePostgreSql myObj = new ManagePostgreSql();
 
         try {
+        //myObj.setVariables();
         myObj.populatedb();
         out.print("DB poulated");
         }  catch (ClassNotFoundException e) {

@@ -30,7 +30,8 @@ public class HelloWorld extends HttpServlet {
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
-        out.print("Hellow world v7: " + new Date().toString());
+        out.print("Hellow world v9: " + new Date().toString() + "APP_ENVIRONMENT Value:- " + System.getenv("APP_ENVIRONMENT"));
+                System.out.println("APP_ENVIRONMENT Value:- " + System.getenv("APP_ENVIRONMENT"));
     }
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)

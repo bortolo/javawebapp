@@ -1,5 +1,6 @@
 org/mycompany/models/Actor.class
 org/mycompany/servlets/HelloWorld.class
+org/mycompany/util/ManageConfigProperties.class
 org/mycompany/servlets/InsertActor.class
 org/mycompany/jcg/ManagePostgreSql.class
 org/mycompany/servlets/PopulateDb.class
