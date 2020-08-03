@@ -32,16 +32,12 @@ public class InsertActor extends HttpServlet {
 
         System.out.println("Trying connection to PostgreSQL server.");
         ManagePostgreSql myObj = new ManagePostgreSql();
+        //myObj.setVariables();
         Actor actor = new Actor("John","Doe");
         try {
+
         long id = myObj.insertActor(actor);
-
-        System.out.println(
-                            String.format("%s,%s actor has been inserted with id %d",
-                            actor.getFirstName(), actor.getLastName(), id));
-
-        out.print(String.format("%s,%s actor has been inserted with id %d",
-        actor.getFirstName(), actor.getLastName(), id));
+        out.print(String.format("%s,%s actor has been inserted with id %d",actor.getFirstName(), actor.getLastName(), id));
 
         }  catch (ClassNotFoundException e) {
             System.out.println(e.getMessage());

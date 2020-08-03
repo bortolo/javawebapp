@@ -3,6 +3,7 @@ package org.mycompany.util;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.FileInputStream;
 import java.util.Date;
 import java.util.Properties;
 
@@ -13,7 +14,7 @@ import java.util.Properties;
 
 public class ManageConfigProperties {
 	String result = "";
-	InputStream inputStream;
+	InputStream inputStream = null;
 
   public ManageConfigProperties(){}
 
@@ -23,7 +24,7 @@ public class ManageConfigProperties {
 			Properties prop = new Properties();
 //			String propFileName = "config.properties";
 
-			inputStream = getClass().getClassLoader().getResourceAsStream(configFile);
+			inputStream = new FileInputStream(configFile);
 
 			if (inputStream != null) {
 				prop.load(inputStream);
