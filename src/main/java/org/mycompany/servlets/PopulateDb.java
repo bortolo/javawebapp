@@ -29,11 +29,11 @@ public class PopulateDb extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
         System.out.println("Trying connection to PostgreSQL server.");
+
         ManagePostgreSql myObj = new ManagePostgreSql();
         try {
-        //myObj.setVariables();
-        myObj.populatedb();
-        out.print("DB poulated");
+              myObj.populatedb();
+              out.print("DB poulated");
         }  catch (ClassNotFoundException e) {
             System.out.println(e.getMessage());
             out.print(e.getMessage());
