@@ -20,9 +20,9 @@ public class ManagePostgreSql{
     // private final String url = "jdbc:postgresql://localhost:5432/mypgsqldb";
     // private final String user = "andreabortolossi";
     // private final String password = "Password1234!";
-    // private final String url = "jdbc:postgresql://mybortolodbprova.postgres.database.azure.com:5432/mypgsqldb";
-    // private final String user = "psqladminun@mybortolodbprova";
-    // private final String password = "H@Sh1CoR3!";
+    //private final String url = "jdbc:postgresql://mybortolodbprova.postgres.database.azure.com:5432/mypgsqldb";
+    //private final String user = "psqladminun@mybortolodbprova";
+    //private final String password = "H@Sh1CoR3!";
 
     /**
      * Connect to the PostgreSQL database
